@@ -48,7 +48,7 @@
 
   **Post**
     title:string
-    context:text
+    content:text
 
   **Project**
     title:string
