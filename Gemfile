@@ -37,6 +37,7 @@ gem 'pygments.rb', '~> 1.2', '>= 1.2.1'
 
 # Redcarpet is a fast, safe and extensible Markdown to (X)HTML parser
 gem 'redcarpet', '~> 3.4'
+gem 'friendly_id', '~> 5.2', '>= 5.2.4'
 
 
 
