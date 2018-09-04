@@ -9,8 +9,14 @@
     <%= markdown @project.description %>
 
     <div class="button_wrapper">
-      <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %></a>
+      <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %> on Github</a>
     </div>
+
+    <% if @project.live_link %>
+      <div class="button_wrapper">
+        <a href="<%= @project.live_link %>" class="project_button" target="_blank">See <%= @project.title %> in action</a>
+      </div>
+    <% end %>
   </div>
 
   <% if user_signed_in? %>
