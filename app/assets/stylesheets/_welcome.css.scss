@@ -47,3 +47,30 @@
     text-decoration: none;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .col-1 {
+    width: 100%;
+  }
+  .col-2, .col-3 {
+    width: 50%;
+    margin-top: 2em;
+  }
+}
+
+@media only screen and (max-width: 425px) {
+  .col-1, .col-2, .col-3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .col-1 {
+    p {
+      text-align: left;
+    }
+  }
+
+  hr {
+    margin: 3em auto;
+  }
+}

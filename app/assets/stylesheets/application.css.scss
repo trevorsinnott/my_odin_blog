@@ -142,10 +142,64 @@ hr {
     float: right;
     padding-top: 1.5rem;
     a {
+      clear: right;
       color: $dark;
       text-decoration: none;
       margin: 0 1rem;
       font-size: 1rem;
+    }
+  }
+  label {
+    margin: 9px 1em;
+    color: $dark;
+    text-decoration: none;
+    font-size: 2rem;
+    display: none;
+    width: 1em;
+    float: right;
+  }
+  #toggle {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  #main_navigation {
+    label {
+      display: block;
+      cursor: pointer;
+    }
+    nav {
+      text-align: center;
+      width: 100%;
+      padding-top: 2em;
+      display: none;
+      a {
+        padding: 1em;
+        display: block;
+        color: $light;
+        margin: 0 1em;
+        font-weight: 700;
+        font-size: 1.3em;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+    }
+    #toggle:checked + nav {
+      display: block;
+    }
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  #main_navigation {
+    text-align: center;
+    padding: 2.5em 5% 1.6em 5%;
+    .name, label {
+      float: none;
+    }
+    label {
+      margin: 1.25em auto 0 auto;
     }
   }
 }
