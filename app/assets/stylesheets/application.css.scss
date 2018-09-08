@@ -183,6 +183,9 @@ hr {
         font-size: 1.3em;
         text-transform: uppercase;
         text-decoration: none;
+        &:hover {
+          color: $highlight;
+        }
       }
     }
     #toggle:checked + nav {
