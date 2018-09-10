@@ -166,6 +166,10 @@ hr {
     display: none;
     width: 1em;
     float: right;
+    &:hover {
+      color: $highlight;
+      cursor: pointer;
+    }
   }
   #toggle {
     display: none;
@@ -192,9 +196,6 @@ hr {
         font-size: 1.3em;
         text-transform: uppercase;
         text-decoration: none;
-        &:hover {
-          color: $highlight;
-        }
       }
     }
     #toggle:checked + nav {
