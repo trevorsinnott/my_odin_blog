@@ -12,7 +12,7 @@
       <a href="<%= @project.link %>" class="project_button" target="_blank">Visit <%= @project.title %> on Github</a>
     </div>
 
-    <% if @project.live_link %>
+    <% if !@project.live_link.empty? %>
       <div class="button_wrapper">
         <a href="<%= @project.live_link %>" class="project_button" target="_blank">See <%= @project.title %> in action</a>
       </div>
